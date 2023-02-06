@@ -5,7 +5,7 @@ using std::cout;
 
 int main() {
 
-  double pi{3.14};
+  double pi{3.74};
 
   
   // Attempt 1:
