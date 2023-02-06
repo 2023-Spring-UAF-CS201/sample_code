@@ -26,7 +26,12 @@ int main() {
     //
     // If this operation succeeds,
     //   the value is stored in the number_of_turtles variable
-    cin >> number_of_turtles;
+    cin >> number_of_turtles; // returns cin
+
+    // while (cin >> x)
+    // while (cin)
+    // while (bool{cin})
+
     
     if (bool{cin} == true) {  // This is a more verbose way of saying if (cin)
     
