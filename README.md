@@ -1,10 +1,6 @@
 # Example code for CS 201
 
-Computer Science I
-
-University of Alaska Fairbanks
-
-Spring 2023
+[Computer Science I](https://www.cs.uaf.edu/courses/cs201/index.html) at the University of Alaska Fairbanks, Spring 2023
 
 
 ## Week 1
