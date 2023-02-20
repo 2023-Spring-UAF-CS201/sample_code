@@ -1,3 +1,11 @@
+#include <iostream>
+#include <string>
+
+using std::cout;
+using std::endl;
+using std::cin;
+using std::string;
+
 
 string centered_line(char c, int width, char p, int padding) {
 
