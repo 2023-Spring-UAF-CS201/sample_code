@@ -9,28 +9,40 @@ using std::endl;
 using std::vector;
 using std::string;
 
+string join(vector<string> joins_words) {
 
-string join(vector<string> words);
+  // vector<string> joins_words{mains_words};
+  
+  std::string result;
+
+  for (std::string word : joins_words) {
+    result += word;
+  }
+
+  return result;
+}
+
 
 int main() {
 
-  vector<string> words{"in", "the", "park"};
-  cout << join(words) << endl;
+  vector<string> mains_words{"in", "the", "park"};
+
+
+  
+  //  string result_from_join = join(mains_words);
+
+  string result_from_join{ join(mains_words) };
+
+  cout << result_from_join << endl;
+
+  cout << join(mains_words) << endl;
+
+  join(17);
   
   return 0;
 }
 
 
 
-std::string join(std::vector<std::string> words) {
-
-  std::string result;
-
-  for (std::string word : words) {
-    result += word;
-  }
-
-  return result;
-}
 
 
