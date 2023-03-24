@@ -18,7 +18,8 @@ using std::string;
 class WeatherRecord {
 
 public:
-  
+
+  // default constructor
   WeatherRecord() {
     date = "The eleventeeth of Never";
     high = 100.0;
@@ -30,8 +31,17 @@ public:
     high = h;
     low = l;
   }
-  
 
+
+  // s.length()
+  // v.length()
+  // v.push_back(i)
+
+  string getDate() {
+    return date;
+  }
+  
+private:
   
   std::string date; // this is a *member variable*
 
@@ -44,19 +54,31 @@ public:
 
 int main() {
 
+  // this calls the other constructor
   WeatherRecord sample{"March 22, 2023", 30.5, 8.0}; 
-  WeatherRecord anotherSample;
+
+
+  WeatherRecord anotherSample; // this calls the default constructor of the WeatherRecord class
 
   
   cout << sample.high << endl;   // 30.5
   cout << sample.low << endl;    //  8.0
-  cout << sample.date << endl;   // March 22, 2023
+  cout << sample.getDate() << endl;   // March 22, 2023
 
+  sample.low = -55.3;
+
+  cout << endl;
+  
+  cout << sample.high << endl;   // 30.5
+  cout << sample.low << endl;    //-55.3
+  cout << sample.getDate() << endl;   // March 22, 2023
+
+  
   cout << endl;
 
   cout << anotherSample.high << endl;  // 100
   cout << anotherSample.low << endl;   // -40
-  cout << anotherSample.date << endl;  // The eleventeeth of Never
+  cout << anotherSample.getDate() << endl;  // The eleventeeth of Never
 
   return 0;
 }
