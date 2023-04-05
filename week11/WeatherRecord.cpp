@@ -32,6 +32,7 @@ public:
     low = l;
   }
 
+  // member functions (aka methods)
   string getDate() {
     /*
     if (daysSinceNewYear == 0) {
@@ -45,6 +46,7 @@ public:
     return date;
   }
 
+  // get method - aka accessor method
   double getHigh() {
     return high;
   }
@@ -52,8 +54,27 @@ public:
   double getLow() {
     return low;
   }
+
+  // set method (aka updater)
+  void setLow(double updatedLow) {
+    low = updatedLow;
+  }
+
+  bool warmAllDay() {
+    //return low >= 32;
+    if (low >= 32) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  double temperatureRange() {
+    return high - low;
+  }
   
 private:
+  
   
   std::string date; // this is a *member variable*
   //int daysSinceNewYear;
@@ -77,9 +98,13 @@ int main() {
   cout << sample.getHigh() << endl;   // 30.5
   cout << sample.getLow() << endl;    //  8.0
   cout << sample.getDate() << endl;   // March 22, 2023
-
+  cout << sample.warmAllDay() << endl;
+  cout << sample.temperatureRange() << endl;
+  
   // sample.low = -55.3;
 
+  sample.setLow(-55.3);
+  
   cout << endl;
   
   cout << sample.getHigh() << endl;   // 30.5
