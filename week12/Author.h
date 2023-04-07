@@ -14,23 +14,17 @@
 class Author {
 public:
 
-  Author(std::string first, std::string last) {
-    firstName = first;
-    lastName = last;
-  }
+  // There exists a constructor for this class that takes two strings as parameters
+  Author(std::string first, std::string last);
 
-  // the keyword const here
-  // indicates a binding promise to the compiler
-  // that calling this method
-  // will *not* change the value
-  // of any of this object's member variables
-  std::string getFirstName() const {
-    return firstName;
-  }
 
-  std::string getLastName() const {
-    return lastName;
-  }
+  // There exists a getFirstName method that returns a string (and it won't change the object)
+  std::string getFirstName() const;
+
+
+  // There exists a getLastName method that returns a string (and it won't change the object)
+  std::string getLastName() const
+
   
 private:
   std::string firstName;
