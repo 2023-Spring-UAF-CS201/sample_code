@@ -1,3 +1,5 @@
+#pragma once
+
 #include <string>
 
 // It is generally bad practice to use
@@ -23,7 +25,7 @@ public:
 
 
   // There exists a getLastName method that returns a string (and it won't change the object)
-  std::string getLastName() const
+  std::string getLastName() const;
 
   
 private:
