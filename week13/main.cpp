@@ -1,6 +1,9 @@
-//#include "cubed.h"
+#include "cubed.h"
 
-// Hey, there's gonna be a function like this declared later
+// The following is called a *forward declaration*
+//
+// It means: "Hey, there's gonna be a function like this declared later"
+//
 //int cubed(int x);
 
 
