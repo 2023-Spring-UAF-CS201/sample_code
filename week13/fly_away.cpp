@@ -14,6 +14,8 @@ int main() {
   cout << mine.haveFun() << endl;
 
   string hi{"hi there"};
+
+  cout << red << endl;
   
   return 0;
 }
