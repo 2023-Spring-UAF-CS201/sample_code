@@ -21,7 +21,19 @@ enum class Month {
 
 std::ostream& operator<<(std::ostream& stream, Month m) {
 
-  stream << "It's a Month!!!";
+  switch(m) {
+  case Month::january:
+    stream << "January";
+    break;
+
+  case Month::february:
+    stream << "February";
+    break;
+
+  default:
+    stream << "Sometime later than February";
+    break;
+  }
 
   return stream;
 }
