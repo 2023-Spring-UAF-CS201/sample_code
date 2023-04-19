@@ -19,7 +19,12 @@ enum class Month {
   december
 };
 
+std::ostream& operator<<(std::ostream& stream, Month m) {
 
+  stream << "It's a Month!!!";
+
+  return stream;
+}
 
 
 class Date {
@@ -78,6 +83,17 @@ int daysInMonth(Month m) {
 int main() {
 
   Month m = Month::february;
+
+  std::cout << "Month is " << m << std::endl;
+
+  /*
+  operator<<(std::cout, "Month is ");
+
+  operator<<(std::cout, m);
+
+  operator<<(std::cout, std::endl);
+  */
+  
   
   Date d{1945, m, 27};
   
